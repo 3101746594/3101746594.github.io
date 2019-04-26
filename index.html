@@ -10,9 +10,18 @@
 
 <link rel="stylesheet" href="css/lightbox.css" type="text/css" media="all">
 <link href="css/style.css" rel="stylesheet" type="text/css">
+
  <script src="js/jquery-1.11.1.min.js.下载"></script>
 <script type="text/javascript" src="js/move-top.js.下载"></script>
 <script type="text/javascript" src="js/easing.js.下载"></script>
+<script type="text/javascript">
+    jQuery(document).ready(function($) {
+        $(".scroll").click(function(event){     
+            event.preventDefault();
+            $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+        });
+    });
+</script>
 
 <script src="js/responsiveslides.min.js.下载"></script>
         <script>
@@ -25,12 +34,12 @@
                             speed: 500,
                             namespace: "callbacks",
                             before: function () {
-                            $('.events').append("<li>before event fired.</li>");
-                            },
-                            after: function () {
-                                $('.events').append("<li>after event fired.</li>");
-                                }
-                                });
+                        $('.events').append("<li>before event fired.</li>");
+                        },
+                        after: function () {
+                            $('.events').append("<li>after event fired.</li>");
+                            }
+                            });
                         });
         </script>
         <script type="text/javascript" src="js/jquery.flexisel.js.下载"></script>
@@ -52,6 +61,7 @@
         <div class="navigation wow zoomIn animated" data-wow-duration="1.5s" data-wow-delay="0.3s" style="visibility: visible; animation-duration: 1.5s; animation-delay: 0.3s; animation-name: zoomIn;width:100%;background:#f1f1f1;position: fixed;top:0;z-index: 666666;">
                 <div class="container">
                     <nav class="navbar navbar-default">
+                        <!-- Brand and toggle get grouped for better mobile display -->
                         <div class="navbar-header">
                           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                             <span class="sr-only">切换导航</span>
@@ -468,7 +478,7 @@
 <div id="contact" class="contact all_pad w3agile wow bounceInDown animated" data-wow-duration="1s" data-wow-delay="0s" style="visibility: visible; animation-duration: 1s; animation-delay: 0s; animation-name: bounceInDown;">
     <div class="container">
         <h3 class="title">接触<span></span></h3>
-            <p class="para">复仇者联盟（Avengers）是美国漫威漫画旗下超级英雄团队，初次登场于《复仇者联盟》第1期（1963年9月），由编剧斯坦·李和画家杰克·科比联合创造，被称为是”地球上最强超级英雄组合“。 </p>
+            <p class="para">生活中，狮子座feugiat lobortis euismod评级机构在risus adipiscing ELIT。整数tempor乌仁娜QUIS华富volutpat，非consequat augue iaculis。Malesuada米饭沙拉箭头融资妆。  </p>
         <div class="col-md-7 contact-left">
             <h4>保持联系</h4>
             <form action="#" method="post">
